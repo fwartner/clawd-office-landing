@@ -38,7 +38,8 @@ export default function CookieBanner() {
       role="dialog"
       aria-labelledby="cookie-banner-title"
       aria-describedby="cookie-banner-desc"
-      className="fixed bottom-0 left-0 right-0 z-50 p-4 md:p-6"
+      className="fixed bottom-0 left-0 right-0 z-50 p-4 md:p-6 pb-[calc(1rem+env(safe-area-inset-bottom))] md:pb-6"
+      style={{ overscrollBehavior: "contain" }}
     >
       <div className="mx-auto max-w-2xl rounded-lg border-neo bg-brand-white shadow-neo-lg">
         <div className="relative flex flex-col gap-4 p-4 md:p-6">
@@ -138,14 +139,14 @@ export default function CookieBanner() {
                 <button
                   type="button"
                   onClick={handleSaveCustom}
-                  className="rounded border-neo bg-brand-teal px-4 py-2 font-medium text-brand-white shadow-neo-sm transition-[transform,box-shadow] hover:shadow-neo-sm-hover"
+                  className="rounded border-neo bg-brand-teal min-h-[44px] px-4 py-2 font-medium text-brand-white shadow-neo-sm transition-[transform,box-shadow] hover:shadow-neo-sm-hover touch-manipulation focus-visible:ring-2 focus-visible:ring-brand-teal focus-visible:ring-offset-2"
                 >
                   {t(translations.cookie.save)}
                 </button>
                 <button
                   type="button"
                   onClick={closeSettings}
-                  className="rounded border-neo bg-brand-white px-4 py-2 font-medium text-brand-black shadow-neo-sm transition-[transform,box-shadow] hover:shadow-neo-sm-hover"
+                  className="rounded border-neo bg-brand-white min-h-[44px] px-4 py-2 font-medium text-brand-black shadow-neo-sm transition-[transform,box-shadow] hover:shadow-neo-sm-hover touch-manipulation focus-visible:ring-2 focus-visible:ring-brand-teal focus-visible:ring-offset-2"
                 >
                   {t(translations.cookie.rejectNonEssential)}
                 </button>
@@ -156,21 +157,21 @@ export default function CookieBanner() {
               <button
                 type="button"
                 onClick={acceptAll}
-                className="rounded border-neo bg-brand-teal px-4 py-2 font-medium text-brand-white shadow-neo-sm transition-[transform,box-shadow] hover:shadow-neo-sm-hover"
+                className="rounded border-neo bg-brand-teal min-h-[44px] px-4 py-2 font-medium text-brand-white shadow-neo-sm transition-[transform,box-shadow] hover:shadow-neo-sm-hover touch-manipulation focus-visible:ring-2 focus-visible:ring-brand-teal focus-visible:ring-offset-2"
               >
                 {t(translations.cookie.acceptAll)}
               </button>
               <button
                 type="button"
                 onClick={rejectNonEssential}
-                className="rounded border-neo bg-brand-white px-4 py-2 font-medium text-brand-black shadow-neo-sm transition-[transform,box-shadow] hover:shadow-neo-sm-hover"
+                className="rounded border-neo bg-brand-white min-h-[44px] px-4 py-2 font-medium text-brand-black shadow-neo-sm transition-[transform,box-shadow] hover:shadow-neo-sm-hover touch-manipulation focus-visible:ring-2 focus-visible:ring-brand-teal focus-visible:ring-offset-2"
               >
                 {t(translations.cookie.rejectNonEssential)}
               </button>
               <button
                 type="button"
                 onClick={openSettings}
-                className="rounded border-neo border-brand-gray bg-transparent px-4 py-2 font-medium text-brand-black shadow-neo-sm transition-[transform,box-shadow] hover:shadow-neo-sm-hover"
+                className="rounded border-neo border-brand-gray bg-transparent min-h-[44px] px-4 py-2 font-medium text-brand-black shadow-neo-sm transition-[transform,box-shadow] hover:shadow-neo-sm-hover touch-manipulation focus-visible:ring-2 focus-visible:ring-brand-teal focus-visible:ring-offset-2"
               >
                 {t(translations.cookie.customize)}
               </button>

@@ -48,7 +48,7 @@ export default function AgencyBanner() {
             href="https://pixelandprocess.de/kontakt"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-brand-black text-white border-neo shadow-neo shadow-neo-hover px-6 py-3 font-bold transition-all"
+            className="bg-brand-black text-white border-neo shadow-neo shadow-neo-hover min-h-[44px] px-6 py-3 font-bold transition-all inline-flex items-center justify-center touch-manipulation focus-visible:ring-2 focus-visible:ring-brand-teal focus-visible:ring-offset-2"
           >
             {t(translations.agency.ctaPrimary)}
           </a>
@@ -56,7 +56,7 @@ export default function AgencyBanner() {
             href="https://pixelandprocess.de"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white border-neo shadow-neo shadow-neo-hover px-6 py-3 font-bold transition-all"
+            className="bg-white border-neo shadow-neo shadow-neo-hover min-h-[44px] px-6 py-3 font-bold transition-all inline-flex items-center justify-center touch-manipulation focus-visible:ring-2 focus-visible:ring-brand-teal focus-visible:ring-offset-2"
           >
             {t(translations.agency.ctaSecondary)} →
           </a>

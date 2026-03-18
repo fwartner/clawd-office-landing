@@ -9,7 +9,7 @@ export default function Footer() {
   const { openSettings } = useCookieConsent();
 
   return (
-    <footer className="bg-brand-black py-6">
+    <footer className="bg-brand-black py-6 pb-[calc(1.5rem+env(safe-area-inset-bottom))]">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2">
           <img
@@ -22,12 +22,12 @@ export default function Footer() {
           </span>
         </div>
 
-        <div className="flex items-center gap-6 text-sm text-gray-500">
+        <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-sm text-gray-500 justify-center md:justify-end">
           <a
             href="https://pixelandprocess.de"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-brand-teal transition-colors"
+            className="min-h-[44px] flex items-center hover:text-brand-teal transition-colors touch-manipulation"
           >
             pixelandprocess.de
           </a>
@@ -35,7 +35,7 @@ export default function Footer() {
             href="https://github.com/fwartner/clawd-office"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-brand-teal transition-colors"
+            className="min-h-[44px] flex items-center hover:text-brand-teal transition-colors touch-manipulation"
           >
             GitHub
           </a>
@@ -43,7 +43,7 @@ export default function Footer() {
             href="https://pixelandprocess.de/impressum"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-brand-teal transition-colors"
+            className="min-h-[44px] flex items-center hover:text-brand-teal transition-colors touch-manipulation"
           >
             {t(translations.footer.imprint)}
           </a>
@@ -51,14 +51,14 @@ export default function Footer() {
             href="https://pixelandprocess.de/datenschutz"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-brand-teal transition-colors"
+            className="min-h-[44px] flex items-center hover:text-brand-teal transition-colors touch-manipulation"
           >
             {t(translations.footer.privacy)}
           </a>
           <button
             type="button"
             onClick={openSettings}
-            className="text-sm text-gray-500 hover:text-brand-teal transition-colors"
+            className="min-h-[44px] flex items-center text-sm text-gray-500 hover:text-brand-teal transition-colors touch-manipulation focus-visible:ring-2 focus-visible:ring-brand-teal focus-visible:ring-offset-2 focus-visible:ring-offset-brand-black"
           >
             {t(translations.cookie.cookieSettings)}
           </button>

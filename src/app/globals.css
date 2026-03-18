@@ -47,6 +47,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -54,6 +55,13 @@ body {
   color: var(--color-brand-black);
   background: var(--color-brand-white);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Touch-friendly: prevent double-tap zoom delay on buttons/links */
+.touch-manipulation {
+  touch-action: manipulation;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -93,6 +101,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .animate-float-delay-2 {
   animation: float 2s ease-in-out infinite 1s;
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .animate-blink,
+  .animate-float,
+  .animate-float-delay-1,
+  .animate-float-delay-2 {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 /* Pixel checkerboard floor */

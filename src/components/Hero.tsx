@@ -32,7 +32,7 @@ export default function Hero() {
           <div className="flex gap-4 flex-wrap md:justify-start justify-center mb-6">
             <a
               href="#quickstart"
-              className="font-heading font-semibold text-sm px-7 py-3.5 border-neo bg-brand-purple shadow-neo shadow-neo-hover transition-all inline-flex items-center gap-2"
+              className="font-heading font-semibold text-sm min-h-[44px] px-7 py-3.5 border-neo bg-brand-purple shadow-neo shadow-neo-hover transition-all inline-flex items-center justify-center gap-2 touch-manipulation focus-visible:ring-2 focus-visible:ring-brand-teal focus-visible:ring-offset-2"
             >
               {t(translations.hero.ctaPrimary)}
             </a>
@@ -40,7 +40,7 @@ export default function Hero() {
               href="https://github.com/fwartner/clawd-office"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-heading font-semibold text-sm px-7 py-3.5 border-neo bg-brand-white shadow-neo shadow-neo-hover transition-all inline-flex items-center gap-2"
+              className="font-heading font-semibold text-sm min-h-[44px] px-7 py-3.5 border-neo bg-brand-white shadow-neo shadow-neo-hover transition-all inline-flex items-center justify-center gap-2 touch-manipulation focus-visible:ring-2 focus-visible:ring-brand-teal focus-visible:ring-offset-2"
             >
               {t(translations.hero.ctaSecondary)}
             </a>
@@ -64,11 +64,11 @@ export default function Hero() {
           {/* macOS window frame */}
           <div className="border-neo shadow-neo-lg overflow-hidden">
             {/* Chrome bar */}
-            <div className="bg-brand-black flex items-center gap-1.5 px-3 py-2 border-b-2 border-gray-800">
-              <span className="w-2.5 h-2.5 rounded-full bg-red-400" />
-              <span className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
-              <span className="w-2.5 h-2.5 rounded-full bg-green-400" />
-              <span className="font-mono text-gray-600 text-xs ml-2">
+            <div className="bg-brand-black flex items-center gap-1.5 px-3 py-2 border-b-2 border-gray-800 min-w-0">
+              <span className="w-2.5 h-2.5 shrink-0 rounded-full bg-red-400" />
+              <span className="w-2.5 h-2.5 shrink-0 rounded-full bg-yellow-400" />
+              <span className="w-2.5 h-2.5 shrink-0 rounded-full bg-green-400" />
+              <span className="font-mono text-gray-600 text-xs ml-2 truncate">
                 agent-office - localhost:4173
               </span>
             </div>

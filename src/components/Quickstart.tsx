@@ -18,15 +18,15 @@ export default function Quickstart() {
         {/* Terminal block */}
         <div className="max-w-xl mx-auto border-neo shadow-neo-lg overflow-hidden">
           {/* macOS chrome */}
-          <div className="bg-brand-black flex items-center gap-1.5 px-3 py-2 border-b-2 border-gray-800">
+          <div className="bg-brand-black flex items-center gap-1.5 px-3 py-2 border-b-2 border-gray-800 min-w-0">
             <span className="w-2.5 h-2.5 rounded-full bg-red-400" />
             <span className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
             <span className="w-2.5 h-2.5 rounded-full bg-green-400" />
-            <span className="font-mono text-gray-600 text-xs ml-2">terminal</span>
+            <span className="font-mono text-gray-600 text-xs ml-2 truncate">terminal</span>
           </div>
 
-          {/* Terminal body */}
-          <div className="bg-brand-dark p-5 font-mono text-sm leading-loose">
+          {/* Terminal body - overflow-x-auto for small screens */}
+          <div className="bg-brand-dark p-5 font-mono text-sm leading-loose overflow-x-auto">
             <div>
               <span className="text-brand-teal">$</span>{" "}
               <span className="text-white">git clone https://github.com/fwartner/clawd-office.git</span>
