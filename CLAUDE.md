@@ -33,7 +33,7 @@ Next.js 16 landing page for "Agent Office" — a pixel-art virtual office for AI
 - **Docker:** Multi-stage build (`node:22-bookworm-slim`), standalone Next.js output, runs as non-root `nextjs` user on port 3000
 - **CI/CD:** GitHub Actions on push to `main` → build & push to `ghcr.io/fwartner/clawd-office-landing` → update image tag in GitOps repo (`fwartner/pixelandprocess-gitops` at `apps/agency/clawd-office-landing/values.yaml`)
 - **Hosting:** Hetzner k8s cluster via ArgoCD, Traefik ingress, cert-manager (letsencrypt-prod), ExternalDNS for Cloudflare
-- **URL:** `https://pixel-office.pixelandprocess.de`
+- **URL:** `https://agent-office.pixelandprocess.de` (old URL `pixel-office.pixelandprocess.de` 301-redirects here)
 
 ## Remote Images
 
