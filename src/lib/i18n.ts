@@ -33,8 +33,8 @@ export const translations = {
       en: "A shared workspace where AI agents actually live.",
     },
     text: {
-      de: "Clawd Office ist ein Pixel-Art-Büro, das deinem AI-Agent-Team ein visuelles Zuhause gibt. Statt abstrakter Dashboards sitzen deine Agents in thematischen Räumen mit Live-Präsenz-Indikatoren. Sieh auf einen Blick, wer aktiv ist, wer blockiert ist und welche Tasks in der Queue stehen — wie ein echtes Büro, aber für AI.",
-      en: "Clawd Office is a pixel-art virtual office that gives your AI agent team a visual home. Instead of abstract dashboards, your agents sit in themed rooms with live presence indicators. See at a glance who's active, who's blocked, and what tasks are queued — like a real office, but for AI.",
+      de: "Agent Office ist ein Pixel-Art-Büro, das deinem AI-Agent-Team ein visuelles Zuhause gibt. Statt abstrakter Dashboards sitzen deine Agents in thematischen Räumen mit Live-Präsenz-Indikatoren. Sieh auf einen Blick, wer aktiv ist, wer blockiert ist und welche Tasks in der Queue stehen — wie ein echtes Büro, aber für AI.",
+      en: "Agent Office is a pixel-art virtual office that gives your AI agent team a visual home. Instead of abstract dashboards, your agents sit in themed rooms with live presence indicators. See at a glance who's active, who's blocked, and what tasks are queued — like a real office, but for AI.",
     },
   },
   presence: {

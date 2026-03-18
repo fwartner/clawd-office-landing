@@ -11,7 +11,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Architecture
 
-Next.js 16 landing page for "Clawd Office" — a pixel-art virtual office for AI agent teams. Static site with no API routes, no database, no server-side data fetching.
+Next.js 16 landing page for "Agent Office" — a pixel-art virtual office for AI agent teams. Static site with no API routes, no database, no server-side data fetching.
 
 **Internationalization:** Client-side DE/EN switching via React Context (`src/context/LangContext.tsx`). All strings live in a single translation object in `src/lib/i18n.ts`. Components call `useLang()` to get `lang`, `toggle()`, and `t()` (translation helper with German fallback).
 

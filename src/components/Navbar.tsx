@@ -16,7 +16,7 @@ export default function Navbar() {
             className="w-7 h-7"
           />
           <span className="font-heading font-bold text-brand-black text-lg">
-            Clawd Office
+            Agent Office
           </span>
         </a>
 
