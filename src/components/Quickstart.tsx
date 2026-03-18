@@ -1,54 +1,53 @@
 "use client";
 
 import { useLang } from "@/context/LangContext";
-import { translations as t } from "@/lib/i18n";
+import { translations } from "@/lib/i18n";
 
 export default function Quickstart() {
-  const { t: tr } = useLang();
+  const { t } = useLang();
 
   return (
-    <section className="py-20 bg-brand-black text-brand-white" id="start">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="quickstart" className="py-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <p className="font-heading font-semibold text-xs uppercase tracking-widest text-brand-yellow mb-3">
-            {tr(t.quickstart.label)}
-          </p>
           <h2 className="font-heading font-bold text-3xl md:text-4xl tracking-tight">
-            {tr(t.quickstart.title)}
+            {t(translations.quickstart.title)}
           </h2>
         </div>
 
-        {/* Terminal box */}
-        <div className="max-w-2xl mx-auto border-neo bg-[#111] shadow-neo-lg overflow-hidden">
-          {/* Terminal header */}
-          <div className="bg-brand-dark px-4 py-3 border-b-2 border-[#333] flex items-center gap-2">
-            <span className="w-3 h-3 border border-[#333] bg-[#ff5f57]" />
-            <span className="w-3 h-3 border border-[#333] bg-[#ffbd2e]" />
-            <span className="w-3 h-3 border border-[#333] bg-[#28c840]" />
-            <span className="ml-2 font-heading font-semibold text-xs text-[#888]">
-              Terminal
-            </span>
+        {/* Terminal block */}
+        <div className="max-w-xl mx-auto border-neo shadow-neo-lg overflow-hidden">
+          {/* macOS chrome */}
+          <div className="bg-brand-black flex items-center gap-1.5 px-3 py-2 border-b-2 border-gray-800">
+            <span className="w-2.5 h-2.5 rounded-full bg-red-400" />
+            <span className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
+            <span className="w-2.5 h-2.5 rounded-full bg-green-400" />
+            <span className="font-mono text-gray-600 text-xs ml-2">terminal</span>
           </div>
 
           {/* Terminal body */}
-          <div className="p-5 font-mono text-sm leading-8 text-[#e0e0e0]">
-            <span className="text-[#555]"># Clone &amp; install</span>
-            <br />
-            <span className="text-brand-teal">$</span> git clone
-            https://github.com/fwartner/clawd-office.git
-            <br />
-            <span className="text-brand-teal">$</span> cd clawd-office &amp;&amp;
-            npm install
-            <br />
-            <br />
-            <span className="text-[#555]"># Start dev server</span>
-            <br />
-            <span className="text-brand-teal">$</span> npm run dev
-            <br />
-            <br />
-            <span className="text-[#555]">{tr(t.quickstart.comment)}</span>
+          <div className="bg-brand-dark p-5 font-mono text-sm leading-loose">
+            <div>
+              <span className="text-brand-teal">$</span>{" "}
+              <span className="text-white">git clone https://github.com/fwartner/clawd-office.git</span>
+            </div>
+            <div>
+              <span className="text-brand-teal">$</span>{" "}
+              <span className="text-white">cd clawd-office &amp;&amp; npm install</span>
+            </div>
+            <div>
+              <span className="text-brand-teal">$</span>{" "}
+              <span className="text-white">npm run dev</span>
+            </div>
+            <div className="text-presence-active mt-2">
+              &#10003; Office running at localhost:4173
+            </div>
           </div>
         </div>
+
+        <p className="text-center text-sm text-brand-gray mt-4">
+          {t(translations.quickstart.note)}
+        </p>
       </div>
     </section>
   );
