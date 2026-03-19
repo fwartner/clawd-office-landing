@@ -1,7 +1,6 @@
 "use client";
 
 import { CookieConsentProvider } from "@/context/CookieConsentContext";
-import UmamiScript from "./UmamiScript";
 
 export default function RootClientWrapper({
   children,
@@ -11,7 +10,6 @@ export default function RootClientWrapper({
   return (
     <CookieConsentProvider>
       {children}
-      <UmamiScript />
     </CookieConsentProvider>
   );
 }
