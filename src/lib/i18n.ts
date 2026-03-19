@@ -283,7 +283,7 @@ export const translations = {
       en: "Essential cookies are required for basic website functionality and cannot be disabled.",
     },
     analytics: {
-      de: "Analytics-Cookies helfen uns zu verstehen, wie Besucher unsere Website nutzen (z. B. Umami). Die Daten werden anonymisiert und nicht an Dritte weitergegeben.",
+      de: "Analytics-Cookies helfen uns zu verstehen, wie Besucher unsere Website nutzen (z. B. Plausible). Die Daten werden anonymisiert und nicht an Dritte weitergegeben.",
       en: "Analytics cookies help us understand how visitors use our website (e.g. Plausible). Data is anonymized and not shared with third parties.",
     },
     marketing: {
