@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import RootClientWrapper from "@/components/RootClientWrapper";
 import "./globals.css";
 
@@ -32,6 +33,14 @@ export default function RootLayout({
     <html lang="de" suppressHydrationWarning>
       <body className="antialiased">
         <RootClientWrapper>{children}</RootClientWrapper>
+        <Script
+          async
+          src="https://stats.pixelandprocess.de/js/pa-15a74afc23b54787b74116.js"
+          strategy="afterInteractive"
+        />
+        <Script id="plausible-init" strategy="afterInteractive">
+          {`window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()`}
+        </Script>
       </body>
     </html>
   );
